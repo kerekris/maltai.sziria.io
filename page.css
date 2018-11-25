@@ -1,0 +1,232 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12 pt;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+hr {
+    background-color: red;
+    height: 2px;
+    margin-left: 0px;
+    border: none;
+}
+#cim {
+    margin-left: 50px;
+    margin-top: 150px;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 0.9;
+    font-size: 60pt;
+}
+#cim_alatti_vonal {
+    background-color: red;
+    height: 2px;
+    width: 200px;
+    margin-left: 0em;
+}
+.idezet {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+header .idezet {
+    font-size: 25pt;
+    line-height: 1.1;
+    margin-bottom: 0.2em;
+}
+.kepala {
+    font-size: 13px;
+}
+#bevezeto {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4em;
+    line-height: 1.4;
+    padding: 50px;
+}
+section {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+h2 {    
+    font-weight: bold;
+    font-size: 38pt;
+}
+h2 hr {
+    width: 80px;
+}
+h4 {
+    font-size: 20pt;
+    margin: 0px;
+}
+section p {
+    max-width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14pt;
+    line-height: 1.6;
+}
+section hr {
+    width: 80px;
+}
+.kiemeles {
+    max-width: 684px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22px;
+    border-left: 6px red;
+    border-left-style: solid;
+    font-weight: bold;
+    font-size: 15pt;
+    line-height: 1.5;
+}
+.kiemeles p {
+    max-width: 684px;
+}
+
+.piros {
+    background-color: red;
+    max-width: 642px;
+    padding: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.piros p {
+    font-size: 13pt;
+    line-height: 1.5;
+}
+.nagyobb_betu {
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 18pt;
+    margin: 0px;
+}
+.fuggoleges {
+    float: left;
+    background-color: red;
+    height: 100%;
+}
+td {
+    vertical-align: top;
+    padding-top: 5px;
+    padding-right: 10px;
+} 
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: 2px solid red;
+    height: 65px;
+    background-color: #000000;
+    background-image: linear-gradient(#383737, #000000, #202020);
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.9);
+    padding: 0px;
+    }
+#menu {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1050px;
+    height: 65px;
+    margin-top: 0px;
+}    
+#menu ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65px;
+    padding: 0px;
+    margin-top: 0px;
+    width: 800px;
+}
+#menu li {
+    display: inline-block;
+    padding: 24px 15px 24px 15px;
+}
+#menu ul li:hover {
+    background-color: red;
+
+}
+#menu ul a {
+    text-decoration: none;
+    color: white;
+}
+#hamburger {
+    width: 50px;
+    height: 44px;
+    margin: 29px 44px;
+    float: right;
+    display: none;
+}
+#hamburger div{
+    background-color: white;
+    height:6px;
+    margin:6px;
+    border-radius: 3px;
+}
+#logo_fejlecben {
+    display: none;
+    margin-left: 50px;
+}
+.nagy_kepkeret {
+    width: 100%;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+.nagy_kepek {
+    width: 100%;
+    min-width: 500px;
+}
+@media screen and (max-width: 950px) {
+    nav {
+        height: 100px;
+        padding: 0px
+        z-index: 100;
+                }
+    #menu {
+        margin-left: 0px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-color: black;
+        overflow: hidden;
+        display: none;
+        z-index: 50;
+    }    
+    #menu ul {
+        list-style-type: none;
+        margin: 0px;
+        height: auto;
+        padding: 0px;
+        margin-top: 0px;
+        width: 100%;
+    }
+    #menu ul li {
+        display: block;
+        font-size: 18pt;
+        padding-left: 30px;
+        border-bottom: 1px solid #383737;
+    }
+    #hamburger {
+        display: inline-block;
+    }
+    #logo_kepen {
+        display: none;
+    }
+    #logo_fejlecben {
+        display: inline-block;
+        height: 45px;
+        margin-top: 28px;
+    }
+}
