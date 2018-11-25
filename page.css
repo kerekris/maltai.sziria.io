@@ -230,3 +230,14 @@ nav {
         margin-top: 28px;
     }
 }
+@media screen and (max-width: 650px){
+    h1 {
+        font-size: 40pt;
+    }
+    #bevezeto {
+        padding: 30px;
+    }
+    section {
+        padding: 30px;
+    }
+}
