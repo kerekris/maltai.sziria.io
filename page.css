@@ -232,12 +232,48 @@ nav {
 }
 @media screen and (max-width: 650px){
     h1 {
-        font-size: 40pt;
+        font-size: 35pt;
     }
     #bevezeto {
-        padding: 30px;
+        padding: 25px;
     }
     section {
-        padding: 30px;
+        padding: 25px;
+    }
+    #cim {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 150px;
+    }
+    header .idezet {
+        font-size: 22px;
+    }
+    section p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .kiemeles {
+        padding-left: 10px;
+        font-size: 17px;
+    }
+    h2 {    
+        font-weight: bold;
+        font-size: 33px;
+    }
+    .piros {
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    h4 {
+        font-size: 17px;
+        margin: 0px;
+    }
+    .piros p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .piros span {
+        width: 100%;
     }
 }
