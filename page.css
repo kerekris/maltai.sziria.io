@@ -35,7 +35,6 @@ h1 {
     background-repeat: no-repeat;
     height: 700px;
     padding-top: 120px;
-    background-color: purple;
 }
 #cim_alatti_vonal {
     background-color: red;
@@ -205,6 +204,7 @@ nav {
     padding-top: 50%; 
     background-size: cover; 
     margin-bottom: 50px;
+    
 }
 #kozosseg .nagy_kepkeret {
     padding-top: 35%;
@@ -217,11 +217,19 @@ nav {
 .filmecskek {
     float: left;
     width: 21%;
-    height: 200px;
+    height: 160px;
     margin: 2%;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
 }
 .filmecskek:hover {
     background-color: red;
+    box-shadow: 0px 0px 30px 5px #444444;
+}
+.filmecskek img {
+   width: 100%;
+   padding-bottom: 7px;
 }
 .resp-container {
     position: relative;
@@ -260,12 +268,24 @@ footer {
 #eltartas {
 margin: 0 50px;
 }
+#logotarto {
+    float:left;
+    width: 30%;
+}
 #szoveg {
-float: left;
+float:left;
+width: 70%;
 }
 footer img {
-    width: 218px;
+    max-width: 218px;
+    float: left;
+    padding-top: 2%;
+    margin-right: 15%;
+    padding-bottom: 30px;
 }
+.piros_sav {
+    height: 25px;
+    background-color: red;
 }
 
 @media screen and (max-width: 950px) {
@@ -304,11 +324,12 @@ footer img {
     #hamburger {
         display: inline-block;
     }
-   
-    
-
-    
-    
+    #logotarto {
+    width: 100%;
+    }
+    #szoveg {
+    width: 100%;
+    }
 }
 @media screen and (max-width: 650px){
     h1 {
