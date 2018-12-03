@@ -23,13 +23,18 @@ hr {
 
 #cim {
     margin-left: 50px;
-    position: relative;
+    position: absolute;
+    top: 160px;
 }
+#logo_kepen {  
+    height:55px;
+} 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     line-height: 0.9;
     font-size: 60pt;
+    margin: 20px 0px;
 }
 #nagy_kep {
     background-image: url("images/borito.jpg");
@@ -48,11 +53,11 @@ h1 {
 .idezet {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    margin: 20px 0px;
 }
 .kepala {
     font-size: 15px;
-    width: 100%;
-    line-height: 1.6;
+    margin-top: 10px;
 }
 header .idezet {
     font-size: 25pt;
@@ -228,26 +233,6 @@ article div.hatter{
     line-height: 1.5;
     padding-top: 12px;
 }
-.kepre_irt {
-    position: absolute;
-    font-size: 2.3vw;
-    line-height: 1.2;
-    border-left: 4px solid red;
-    padding-left: 10px;
-}
-#haboru .nagy_kepkeret .kepre_irt {
-    right: 3%;
-    bottom: 2%;
-}
-#segitseg .nagy_kepkeret .kepre_irt {
-    left: 4%;
-    bottom: 3%;
-}
-#kiallitas .nagy_kepkeret .kepre_irt {
-    width: 39%;
-    right: 2%;
-    bottom: 3%;
-}
 
 /* Képek */
 
@@ -257,6 +242,27 @@ article div.hatter{
     margin-bottom: 55px;
     font-size: 0;
     overflow: auto;
+}
+#haboru_1 {
+    width: 60%; margin-right: 2%; margin-bottom: 2%;
+}
+#haboru_2 {
+    width: 38%; margin-bottom: 2%;
+}
+#haboru_3 {
+    width: 40%; margin-right: 2%; float: left;
+}
+#haboru_4 {
+    width: 58%;
+}
+#festes {
+    width: 37%; margin-right: 2%;
+}
+#apacak {
+    width: 34.8%;margin-right: 2%;
+}
+#szerzetes {
+    width: 24%;
 }
 #bazilika {
     float: right;
@@ -289,6 +295,15 @@ article div.hatter{
 #bangladesh {
     float: left;
     width: 43%;
+}
+#segitseg_1 {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+}
+#segitseg_2 {
+    float: left;
+    width: 49%;
 }
 
 /* Videós rész */
@@ -364,6 +379,9 @@ footer img {
 }
 
 @media screen and (max-width: 950px) {
+
+/* Navigáció */
+    
     nav {
         right: 0px;
         height: 50px;
@@ -405,30 +423,55 @@ footer img {
     #szoveg {
     width: 100%;
     }
+
+    /* Header */
+
+    #nagy_kep {
+        width: 100%;
+        padding-top: 45%;
+        height: 200px;
+    }
+    #cim {
+        margin-left: 50px;
+        position: absolute;
+        top: 50px;
+    }
 }
 @media screen and (max-width: 650px){
+
+    /* Header */
+
     h1 {
-        font-size: 11vw;
+        font-size: 13vw;
     }
     #logo_kepen {
-        width: 45%;
+        width: 50%;
     }
     #bevezeto {
+        margin-top: 75px;
         padding: 25px;
-        font-size: 19px;
+        font-size: 17px;
+        z-index: 5;
+
     }
+    #cim {
+        top: 45%;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #cim_alatti_vonal {
+        width: 30%;
+    }
+    header .idezet {
+        font-size: 5vw;
+    }
+    
+    /* Article */
+
     section {
         padding: 25px;
     }
-    #cim {
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-top: 150px;
-    }
-    header .idezet {
-        font-size: 22px;
-    }
-    section p {
+        section p {
         font-size: 15px;
         line-height: 1.6;
     }
@@ -461,6 +504,101 @@ footer img {
     article div.hatter{
         background-size: 7%;
     }
+
+    /* Elválasztó képek */
+
+    .kepalairas {
+        font-size: 12px;
+        line-height: 1.5;
+        padding-top: 8px;
+    }
+
+    /* Képek */
+
+    .keptarto {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0;
+    overflow: auto;
+    padding: 10%;
+    }
+    .keptarto img {
+        padding: 2%;
+        }
+    #haboru_1 {
+            width: 96%; margin-right: 0%; margin-bottom: 0%;
+        }
+    #haboru_2 {
+            width: 96%; margin-bottom: 0%;
+        }
+    #haboru_3 {
+            width: 96%; margin-right: 0%; float: none;
+        }
+    #haboru_4 {
+            width: 96%;
+        }
+    #festes {
+    width: 96%; margin: 0%;
+    }
+    #apacak {
+    width: 96%;margin-right: 0%;
+    }
+    #szerzetes {
+    width: 96%;
+    }
+    #bazilika {
+        float: none;
+        width: 96%;
+    }
+    #ferenc {
+        float: none;
+        width: 96%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+    }
+    #kozma {
+        float: none;
+        width: 96%;
+        margin-right: 0%;
+    }
+    #nemetek {
+        float: none;
+        width: 96%;
+    }
+    #szivek {
+        float: none;
+        width: 96%;
+    }
+    #arviz {
+        float: none;
+        width: 96%;
+        margin-right: 0%;
+    }
+    #bangladesh {
+        float: none;
+        width: 96%;
+    }
+    #segitseg_1 {
+        float: none;
+        width: 96%;
+        margin-right: 0%;
+    }
+    #segitseg_2 {
+        float: none;
+        width: 96%;
+    }
+
+    /* Videók */
+   
+    .filmecskek {
+        width: 46%;
+        margin: 2%;
+        font-size: 14pt;
+    }
+
+    /* Footer */
+
     #eltartas {
         margin: 0 25px;
         }
@@ -471,9 +609,5 @@ footer img {
     footer img {
         width: 170px;
     }
-    .filmecskek {
-        width: 46%;
-        margin: 2%;
-        font-size: 14pt;
-    }
+ 
 }
