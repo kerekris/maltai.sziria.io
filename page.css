@@ -59,6 +59,12 @@ h1 {
     font-size: 15px;
     margin-top: 10px;
 }
+#kiallitas_piros {
+    width: 300px;
+    position: relative;
+    left: -65px;
+    margin-top: 5%;
+}
 header .idezet {
     font-size: 25pt;
     line-height: 1.1;
@@ -66,7 +72,7 @@ header .idezet {
 }
 #bevezeto {
     max-width: 1050px;
-    margin-top: -200px;
+    margin-top: -210px;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.4em;
@@ -426,15 +432,26 @@ footer img {
 
     /* Header */
 
+    #kiallitas_piros {
+        margin-top: 2,5%;
+    }
+
     #nagy_kep {
         width: 100%;
-        padding-top: 45%;
+        padding-top: 40%;
         height: 200px;
     }
     #cim {
         margin-left: 50px;
         position: absolute;
-        top: 50px;
+        top: 60%;
+    }
+    #bevezeto {
+        margin-top: 270px;
+        padding: 50px;
+        font-size: 18px;
+        z-index: 5;
+
     }
 }
 @media screen and (max-width: 650px){
@@ -443,29 +460,42 @@ footer img {
 
     h1 {
         font-size: 13vw;
+        margin: 4vw 0px;
     }
     #logo_kepen {
-        width: 50%;
+        width: 55%;
+        height: auto;
     }
     #bevezeto {
-        margin-top: 75px;
+        margin-top: 44%;
         padding: 25px;
         font-size: 17px;
         z-index: 5;
 
     }
     #cim {
-        top: 45%;
+        top: 57%;
         margin-left: 25px;
         margin-right: 25px;
     }
+    .kepala {
+        font-size: 3vw;
+        margin-top: 2%;
+    }
+
     #cim_alatti_vonal {
         width: 30%;
     }
     header .idezet {
         font-size: 5vw;
+        margin-top: 4%;
     }
-    
+    #kiallitas_piros {
+        width: 65%;
+        left: -15%;
+    }
+
+
     /* Article */
 
     section {
