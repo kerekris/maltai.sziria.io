@@ -215,6 +215,11 @@ article div.hatter{
     background-color: red;
     height: 100%;
 }
+.keskenyebb {
+    font-weight: bold;
+    margin-top: 8px;
+    display: inline-block;
+}
 
 
 /* Elválasztó képek */
@@ -425,7 +430,7 @@ footer img {
     #hamburgerMenu ul li {
         display: block;
         font-size: 18px;
-        padding: 10px 0px 10px 30px ;
+        padding: 8px 0px 8px 30px ;
 
     }
     #hamburger {
