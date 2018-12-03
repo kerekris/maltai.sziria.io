@@ -1,4 +1,4 @@
-
+/* általános */
 
 body {
     background-color: black;
@@ -18,6 +18,9 @@ hr {
     margin-left: 0px;
     border: none;
 }
+
+/* header */
+
 #cim {
     margin-left: 50px;
     position: relative;
@@ -46,13 +49,15 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
+.kepala {
+    font-size: 15px;
+    width: 100%;
+    line-height: 1.6;
+}
 header .idezet {
     font-size: 25pt;
     line-height: 1.1;
     margin-bottom: 0.2em;
-}
-.kepala {
-    font-size: 13px;
 }
 #bevezeto {
     max-width: 1050px;
@@ -63,6 +68,69 @@ header .idezet {
     line-height: 1.4;
     padding: 50px;
 }
+
+/* navigáció */
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: 2px solid red;
+    height: 65px;
+    background-color: #000000;
+    background-image: linear-gradient(#383737, #000000, #202020);
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.9);
+    padding: 0px;
+    z-index: 50;
+    }
+#menu {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1050px;
+    height: 65px;
+    margin-top: 0px;
+}    
+#menu ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 64px;
+    padding: 0px;
+    margin-top: 0px;
+    width: 800px;
+}
+#menu li {
+    display: inline-block;
+    padding: 24px 15px 24px 15px;
+}
+#menu ul li:hover {
+    background-color: red;
+
+}
+#menu ul a {
+    text-decoration: none;
+    color: white;
+}
+#hamburger {
+    width: 30px;
+    height: 44px;
+    margin: 15px 15px;
+    float: right;
+    display: none;
+}
+#hamburger div{
+    background-color: white;
+    height:3px;
+    margin:3px;
+    border-radius: 1.5px;
+}
+#logo_fejlecben {
+    display: none;
+    margin-left: 50px;
+}
+
+/* article */
+
 section {
     max-width: 1050px;
     margin-left: auto;
@@ -135,80 +203,96 @@ article div.hatter{
     background-color: red;
     height: 100%;
 }
-td {
-    vertical-align: top;
-    padding-top: 5px;
-    padding-right: 10px;
-} 
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    border-bottom: 2px solid red;
-    height: 65px;
-    background-color: #000000;
-    background-image: linear-gradient(#383737, #000000, #202020);
-    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.9);
-    padding: 0px;
-    z-index: 50;
-    }
-#menu {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1050px;
-    height: 65px;
-    margin-top: 0px;
-}    
-#menu ul {
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    height: 64px;
-    padding: 0px;
-    margin-top: 0px;
-    width: 800px;
-}
-#menu li {
-    display: inline-block;
-    padding: 24px 15px 24px 15px;
-}
-#menu ul li:hover {
-    background-color: red;
 
-}
-#menu ul a {
-    text-decoration: none;
-    color: white;
-}
-#hamburger {
-    width: 30px;
-    height: 44px;
-    margin: 15px 15px;
-    float: right;
-    display: none;
-}
-#hamburger div{
-    background-color: white;
-    height:3px;
-    margin:3px;
-    border-radius: 1.5px;
-}
-#logo_fejlecben {
-    display: none;
-    margin-left: 50px;
-}
+
+/* Elválasztó képek */
+
 .nagy_kepkeret {
     width: 100%;
     position:relative; 
     height: 60px; 
     padding-top: 50%; 
     background-size: cover; 
+}
+.nagy_kepek_eltartas {
+    width: 100%;
+    position:relative; 
+    overflow: auto;
     margin-bottom: 50px;
-    
 }
 #kozosseg .nagy_kepkeret {
-    padding-top: 35%;
+    padding-top: 33%;
 }
+.kepalairas {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 12px;
+}
+.kepre_irt {
+    position: absolute;
+    font-size: 2.3vw;
+    line-height: 1.2;
+    border-left: 4px solid red;
+    padding-left: 10px;
+}
+#haboru .nagy_kepkeret .kepre_irt {
+    right: 3%;
+    bottom: 2%;
+}
+#segitseg .nagy_kepkeret .kepre_irt {
+    left: 4%;
+    bottom: 3%;
+}
+#kiallitas .nagy_kepkeret .kepre_irt {
+    width: 39%;
+    right: 2%;
+    bottom: 3%;
+}
+
+/* Képek */
+
+.keptarto {
+    position: relative;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    font-size: 0;
+    overflow: auto;
+}
+#bazilika {
+    float: right;
+    width: 40%;
+}
+#ferenc {
+    float: right;
+    width: 35%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+#kozma {
+    float: left;
+    width: 56%;
+    margin-right: 2%;
+}
+#nemetek {
+    float: right;
+    width: 42%;
+}
+#szivek {
+    float: left;
+    width: 58%;
+}
+#arviz {
+    float: left;
+    width: 55%;
+    margin-right: 2%;
+}
+#bangladesh {
+    float: left;
+    width: 43%;
+}
+
+/* Videós rész */
+
 #videoValasztas {
     overflow: auto;
     margin-left: -2%;
@@ -217,7 +301,6 @@ nav {
 .filmecskek {
     float: left;
     width: 21%;
-    height: 160px;
     margin: 2%;
     text-align: center;
     font-size: 14pt;
@@ -225,11 +308,13 @@ nav {
 }
 .filmecskek:hover {
     background-color: red;
-    box-shadow: 0px 0px 30px 5px #444444;
+    box-shadow: 0px 0px 20px 5px #444444;
 }
 .filmecskek img {
    width: 100%;
-   padding-bottom: 7px;
+}
+.filmecskek p {
+    margin: 5px 0px 8px 0px;
 }
 .resp-container {
     position: relative;
@@ -244,19 +329,9 @@ nav {
     height: 100%;
     border: 0;
 }
-.keptarto {
-    position: relative;
-    margin-top: 55px;
-    margin-bottom: 55px;
-    font-size: 0;
-}
-.keptarto img {
-    display: inline-block;
-    margin: none;
-    padding: none;
-    border: none;
-    font-size: 0px;
-}
+
+/* Lábléc */
+
 footer {
     font-size: 14px;
     line-height: 1.6;
@@ -395,5 +470,10 @@ footer img {
         }
     footer img {
         width: 170px;
+    }
+    .filmecskek {
+        width: 46%;
+        margin: 2%;
+        font-size: 14pt;
     }
 }
