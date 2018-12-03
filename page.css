@@ -124,9 +124,7 @@ nav {
 }
 #hamburger {
     width: 30px;
-    height: 44px;
-    margin: 15px 15px;
-    float: right;
+    padding: 10px;
     display: none;
 }
 #hamburger div{
@@ -138,6 +136,9 @@ nav {
 #logo_fejlecben {
     display: none;
     margin-left: 50px;
+}
+#hamburgerMenu {
+    display: none;
 }
 
 /* article */
@@ -387,26 +388,33 @@ footer img {
 @media screen and (max-width: 950px) {
 
 /* Navigáció */
-    
+    #menu {
+        display: none;
+    }   
     nav {
         right: 0px;
-        height: 50px;
-        width: 60px;
-        background-color: red;
+        height: 0;
+        width: 100%;
+        background-color: none;
         display: inline-block;
         background-image: none;
+        border-bottom: none;
+        box-shadow: none;
     }
-    #menu {
+    #hamburgerMenu {
         margin-left: 0px;
         width: 100%;
         height: auto;
-        position: relative;
+        position: absolute;
+        left: 0;
         background-color: black;
         overflow: hidden;
-        display: none;
+        display: hide;
         z-index: 50;
+        padding: 15px;
+        border-bottom: 2px solid red;
     }    
-    #menu ul {
+    #hamburgerMenu ul {
         list-style-type: none;
         margin: 0px;
         height: auto;
@@ -414,14 +422,17 @@ footer img {
         margin-top: 0px;
         width: 100%;
     }
-    #menu ul li {
+    #hamburgerMenu ul li {
         display: block;
-        font-size: 18pt;
-        padding-left: 30px;
-        border-bottom: 1px solid #383737;
+        font-size: 18px;
+        padding: 10px 0px 10px 30px ;
+
     }
     #hamburger {
-        display: inline-block;
+        background-color: red;
+        display: block;
+        float: right;
+        z-index: 80;
     }
     #logotarto {
     width: 100%;
