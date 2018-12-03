@@ -405,7 +405,7 @@ footer img {
         margin-left: 0px;
         width: 100%;
         height: auto;
-        position: absolute;
+        position: fixed;
         left: 0;
         background-color: black;
         overflow: hidden;
@@ -431,7 +431,9 @@ footer img {
     #hamburger {
         background-color: red;
         display: block;
-        float: right;
+        position: fixed;
+        top: 0px;
+        right: 0px;
         z-index: 80;
     }
     #logotarto {
